@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOR FINGER | Advanced Forensic Fingerprinting</title>
+    <meta name="description" content="FOR FINGER - State-of-the-art forensic fingerprint analysis and identification systems. Explore the future of criminal investigation.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="noise"></div>
+    <div class="cursor-glow"></div>
+    <canvas id="particleCanvas"></canvas>
+
+    <nav>
+        <div class="logo">FOR <span>FINGER</span></div>
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">Technology</a></li>
+            <li><a href="#scanner">Scanner</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="cta-nav">Secure Access</button>
+    </nav>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h1 class="reveal-text">THE FUTURE OF <br><span class="accent">BIOMETRIC FORENSICS</span></h1>
+                <p class="hero-sub">Unlocking the unique identity hidden in every touch. Precision, speed, and undeniable accuracy.</p>
+                <div class="hero-btns">
+                    <a href="#scanner" class="btn-primary">Initialize Scan</a>
+                    <a href="#about" class="btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="fingerprint-container">
+                    <div class="scan-line"></div>
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800" alt="Fingerprint Trace" class="hero-img">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="features">
+            <div class="section-header">
+                <h2>Our Technology</h2>
+                <p>Advanced algorithms for unmatched forensic accuracy.</p>
+            </div>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-icon">01</div>
+                    <h3>Ridge Analysis</h3>
+                    <p>Detailed mapping of minutiae points for precise identification even from partial prints.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">02</div>
+                    <h3>Cross-Reference</h3>
+                    <p>Global database connectivity for instantaneous matching across multiple jurisdictions.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">03</div>
+                    <h3>Dermal Depth</h3>
+                    <p>Advanced subsurface scanning to detect spoofing and bypass surface-level damage.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="scanner" class="scanner-section">
+            <div class="scanner-container">
+                <div class="scanner-ui">
+                    <div class="scanner-header">
+                        <h3>SYSTEM TERMINAL: ACTIVE</h3>
+                        <div class="status-pulse"></div>
+                    </div>
+                    <div class="scanner-main">
+                        <div class="scan-area" id="scanArea">
+                            <div class="scanner-svg">
+                                <svg viewBox="0 0 100 100">
+                                    <path d="M30,20 Q50,10 70,20 T70,80 Q50,90 30,80 T30,20" fill="none" stroke="currentColor" stroke-width="0.5" />
+                                    <path d="M35,30 Q50,25 65,30 T65,70 Q50,75 35,70 T35,30" fill="none" stroke="currentColor" stroke-width="0.5" />
+                                    <path d="M40,40 Q50,38 60,40 T60,60 Q50,62 40,60 T40,40" fill="none" stroke="currentColor" stroke-width="0.5" />
+                                </svg>
+                            </div>
+                            <div class="scan-overlay"></div>
+                            <div class="scan-text">PLACE FINGER TO START</div>
+                        </div>
+                        <div class="results-area" id="resultsArea">
+                            <div class="matching-loader">
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                            </div>
+                            <div class="result-data hidden">
+                                <div class="match-percent">99.8% MATCH</div>
+                                <div class="identity-label">IDENTITY VERIFIED</div>
+                                <div class="identity-name">SUBJECT #8421-B</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact-section">
+            <div class="section-header">
+                <h2>Secure Communication</h2>
+                <p>Contact our forensic specialists for high-level inquiries.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <span class="label">ENCRYPTED LINE:</span>
+                        <span class="value">+1 (800) FOR-FINGER</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">SECURE NODE:</span>
+                        <span class="value">hq@forfinger.io</span>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="IDENTITY" required>
+                    <input type="email" placeholder="SECURE EMAIL" required>
+                    <textarea placeholder="ENCRYPTED MESSAGE" rows="4" required></textarea>
+                    <button type="submit" class="btn-primary">TRANSMIT DATA</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">FOR <span>FINGER</span></div>
+            <p>&copy; 2026 FOR FINGER Forensics. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
